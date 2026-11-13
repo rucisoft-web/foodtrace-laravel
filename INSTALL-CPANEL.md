@@ -1,6 +1,6 @@
 # Memasang FoodTrace di cPanel
 
-Paket `foodtrace-laravel-v1.0.zip` sudah berisi folder `vendor/`, jadi tidak perlu Composer di server.
+Paket `foodtrace-laravel-v1.0.x.zip` sudah berisi folder `vendor/`, jadi tidak perlu Composer di server.
 
 ## 1. Siapkan di cPanel
 
@@ -12,11 +12,11 @@ Paket `foodtrace-laravel-v1.0.zip` sudah berisi folder `vendor/`, jadi tidak per
 
 ## 2. Upload
 
-1. **File Manager** → buka folder home (`/home/akun`), **Upload** `foodtrace-laravel-v1.0.zip`.
-2. Klik kanan zip → **Extract** → hasilnya folder `/home/akun/foodtrace`.
+1. **File Manager** → buka folder home (`/home/akun`), **Upload** zip FoodTrace.
+2. Klik kanan zip → **Extract** → hasilnya folder `/home/akun/foodtrace` (zip sudah berisi folder induk `foodtrace/`).
 3. Pastikan folder `foodtrace/storage`, `foodtrace/bootstrap/cache` dan `foodtrace/public/uploads` dapat ditulis (permission 755 / 775).
 
-> Bila document root tidak bisa diarahkan ke `public/`, ekstrak isi folder ke document root; file `.htaccess` di akar paket meneruskan permintaan ke `public/` dan memblokir `.env`.
+> Bila document root tidak bisa diarahkan ke `public/`, pindahkan isi folder `foodtrace/` ke document root; file `.htaccess` di akar paket meneruskan permintaan ke `public/` dan memblokir `.env`.
 
 ## 3a. Pasang lewat browser (wizard)
 
